@@ -2,12 +2,19 @@ const sentence = "hello there from lighthouse labs";
 
 const printAnimation = function(sentence) {
   for (const char in sentence) {
+    
     setTimeout(() => {
       process.stdout.write(sentence[char]);
     }, 100 * char)
+    
   }
+
+  setTimeout(() => {
+    process.stdout.write('\n');
+  }, 3200)
   
 };//end
+
 printAnimation(sentence);
 
 
