@@ -11,7 +11,7 @@ const printAnimation = function(sentence) {
 
   setTimeout(() => {
     process.stdout.write('\n');
-  }, 3200)
+  }, 100 * sentence.length);
   
 };//end
 
